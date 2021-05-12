@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="plane_ground_filter" type="plane_ground_filter_node" name="plane_ground_filter_node" output="screen">
+        <param name="input_cloud" value="/kitti/velo/pointcloud"/>
+        <param name="non_ground_cloud" value="/non_ground_cloud"/>
+    </node>
+</launch>

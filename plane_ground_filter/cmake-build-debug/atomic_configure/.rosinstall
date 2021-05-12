@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /media/data/lzu-presentation2/ros_tutorial/src/plane_ground_filter/cmake-build-debug/devel/setup.sh

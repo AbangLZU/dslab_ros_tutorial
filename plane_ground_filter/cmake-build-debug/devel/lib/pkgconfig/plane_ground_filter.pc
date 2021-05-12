@@ -1,0 +1,8 @@
+prefix=/media/data/lzu-presentation2/ros_tutorial/src/plane_ground_filter/cmake-build-debug/devel
+
+Name: plane_ground_filter
+Description: Description of plane_ground_filter
+Version: 0.0.1
+Cflags: -I/media/data/lzu-presentation2/ros_tutorial/src/plane_ground_filter/include
+Libs: -L${prefix}/lib 
+Requires: roscpp tf2 tf2_ros tf2_geometry_msgs geometry_msgs sensor_msgs nav_msgs pcl_conversions pcl_ros message_generation

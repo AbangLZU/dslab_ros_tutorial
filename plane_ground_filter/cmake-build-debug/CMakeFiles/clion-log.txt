@@ -1,0 +1,63 @@
+/home/rdcas/software/clion-2020.1.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /media/data/lzu-presentation2/ros_tutorial/src/plane_ground_filter
+-- Using CATKIN_DEVEL_PREFIX: /media/data/lzu-presentation2/ros_tutorial/src/plane_ground_filter/cmake-build-debug/devel
+-- Using CMAKE_PREFIX_PATH: /media/data/lzu-presentation2/ros_tutorial/devel;/opt/ros/melodic
+-- This workspace overlays: /media/data/lzu-presentation2/ros_tutorial/devel;/opt/ros/melodic
+-- Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.17", minimum required is "2") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python2
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /media/data/lzu-presentation2/ros_tutorial/src/plane_ground_filter/cmake-build-debug/test_results
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python2 (found version "2.7.17") 
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.7.29
+-- BUILD_SHARED_LIBS is on
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+CMake Warning at cmake-build-debug/cmake/plane_ground_filter-genmsg.cmake:3 (message):
+  Invoking generate_messages() without having added any message or service
+  file before.
+
+  You should either add add_message_files() and/or add_service_files() calls
+  or remove the invocation of generate_messages().
+Call Stack (most recent call first):
+  /opt/ros/melodic/share/genmsg/cmake/genmsg-extras.cmake:307 (include)
+  CMakeLists.txt:20 (generate_messages)
+
+
+-- plane_ground_filter: 0 messages, 0 services
+-- The imported target "vtkRenderingPythonTkWidgets" references the file
+   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-6.3/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtk" references the file
+   "/usr/bin/vtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-6.3/VTKTargets.cmake"
+but not all the files it references.
+
+-- Configuring done
+CMake Error at CMakeLists.txt:45 (add_executable):
+  Cannot find source file:
+
+    src/plane_ground_filter.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx
+
+
+CMake Error at CMakeLists.txt:45 (add_executable):
+  No SOURCES given to target: slope_node
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
