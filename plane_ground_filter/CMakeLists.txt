@@ -14,7 +14,6 @@ find_package(catkin REQUIRED COMPONENTS
 find_package(PCL REQUIRED)
 
 catkin_package(
-        INCLUDE_DIRS include
         CATKIN_DEPENDS
         roscpp
         sensor_msgs
@@ -22,7 +21,7 @@ catkin_package(
         pcl_ros
 )
 
-include_directories(include ${catkin_INCLUDE_DIRS})
+include_directories(${catkin_INCLUDE_DIRS})
 SET(CMAKE_CXX_FLAGS "-O2 -g -Wall ${CMAKE_CXX_FLAGS}")
 
 add_executable(plane_ground_filter_node src/plane_ground_filter.cpp src/plane_ground_filter.h)
